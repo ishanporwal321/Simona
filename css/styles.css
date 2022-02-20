@@ -1,0 +1,190 @@
+/*the priority is given to inline css and the css page code is overwritten by the inline css
+code. hece some the css code in this page is not followed in the main page as i have added 
+inline css code there. */
+/* display inline-block is used to fine it the text in a single line and also leaving a scope
+of chaging the size of the individual elements.*/
+.header{
+	height: 1000px;
+	width: 100%;
+	background-color: /*#D9D7F1*/;
+	display: inline-block;
+}
+
+/*top padding gives the space of 50px between the table content and the border of the table*/
+.company-name{
+	padding-top: 50px;
+	text-align: center;
+	font-family: Bonheur Royale;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.heading{
+	font-size: 6rem;
+}
+/* position tag can have two values one being relative which gives the margin to a specific element
+with respect to the original position of that element. the other value it can have id the absolute 
+which gives the margin with respect to the most recent parent within which the element in effect
+is enclosed in. */
+.by{
+	text-align: center;
+	font-weight: lighter;
+	position: relative;
+	bottom: 68px;
+	left: 150px;
+	margin-left: 20px;
+	color: grey;
+}
+
+.img-1{
+	height: 200px;
+	margin-left: 350px;
+	margin-top: 150px;
+	float: left;
+}
+
+.bgcolor{
+	/*background-color: #D9D7F1;*/
+}
+
+.login-link{
+	padding: 20px;
+}
+
+.container-fluid{
+	padding: 3% 15%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* in this the absolute value is used in position attribute and due to this all the margins mentioned
+below that is to be given with respect to the recent parent of top-right class. */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: black;
+  font-weight: bolder;
+  text-align: right;
+  font-size: 60px;
+  line-height: 0.9;
+  font-family: montserrat;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.footer{
+	height: 220px;
+	font-family: montserrat;
+	background-color: #D1D1D1;
+	color: black;
+	text-align: center;
+	position: relative;
+}
+
+.newsletter{
+	text-align: center;
+	margin-top: 80px;
+	position: relative;
+	top: 80px;
+}
+
+.footer-links{
+	color: black;
+	line-height: 2;
+}
+
+.manufacturer{
+font-size: 15px;
+position: absolute;
+left: 20px;
+bottom: 55px;
+height: 30px;
+text-align: left;
+}
+
+.login-head{
+	font-family: montserrat;
+	margin-left: 150px;
+	font-weight: bolder;
+	position: relative;
+	right: 150px;
+}
+
+.login-data{
+	font-family: montserrat;
+	margin-left: 150px;
+	margin-top: 30px;
+}
+
+.inputs{
+	margin-top: 30px ;
+}
+
+.submit{
+	margin-top: 40px;
+	font-family: montserrat;
+	color: white;
+	background-color: black;
+}
+ .companies{
+ 	margin-top: 80px;
+ 	font-family: montserrat;
+ 	text-align: center;
+ }
+
+/* auto margin automatically aligns the element in the center.*/
+ .line{
+ 	width: 50%; 
+ 	margin: auto;
+ }
+
+/* the way margin is defined in this class is called the clock way whivh defines the margin in
+clockwise manner. i.e top right bottom left */
+ .brand-images{
+ 	align-items: center;
+ 	width: 250px;
+ 	height: 250px;
+ 	margin: 50px 50px 50px 50px;
+ }
+
+ .weather{
+ 	margin-top: 70px;
+ }
+
+ .valentine{
+ 	font-family: waterfall;
+ 	text-align: center;
+ 	margin-top: 110px; 
+ }
+
+.valentine-images{
+margin: 40px 40px 40px 40px;
+}
+
+.row{
+	margin-top: 100px;
+}
+
+.premium-heading{
+	font-family: montserrat;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.premium-packs{
+	font-family: montserrat;
+	text-align: center;
+	margin: 80px;
+	
+}

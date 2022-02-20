@@ -1,0 +1,203 @@
+<!-- Welcome to the code of the shopping website "simona".Here alomg with the code i'll be explaining the html tags and elements that i have used in the commented section-->
+<!-- i have taken inspiration of the design for my website from the the website of ZARA. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simona by Ishan </title>
+  <!-- Here are all the bootstrap, javascript and font style links that i have used in the website-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Montserrat:wght@100&family=Sacramento&family=Waterfall&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- the first bootstrap component i have used in the body section is the navigation bar, with the tags of large with light background colour. i have used the fluid container so that there is no jumping of the elements when the size of the tab is changed.
+  the div tag is used to set the boundaries of a particular division in the page. by using this we can apply properties to a particular division of the page instead of applying it line by line. 
+  the aria tag which is used is for people with visibility problems and have been included to make the website more flexible and open to wider audience.
+  next the basic html elements like unodered list and ancher tag to link the text. href is the target address. all the target pages in this section are made by me.
+  a dropdown menu is also created using the bootstrap class nav-item dropdown.
+  later in this section a search form is also present which is accompanied by a bootstrap button with outline.    -->
+	<nav class="navbar navbar-expand-lg navbar-light bgcolor">
+  <div class="container-fluid">
+  	<div>
+    <a class="navbar-brand Login-link" href="login.html">Login</a>
+	</div>	
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wishlist.html">Wishlist</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Collection
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://www.amazon.in/Mens-Clothing/b?ie=UTF8&node=1968024031">Men</a></li>
+            <li><a class="dropdown-item" href="https://www.amazon.in/Womens-clothing/b?ie=UTF8&node=1953602031">Women</a></li>
+            <li><a class="dropdown-item" href="https://www.firstcry.com/">Kids</a></li>
+            <li><a class="dropdown-item" href="https://www.amazon.com/indie-clothes/s?k=indie+clothes">Indie</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Other</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="premium.html">Premium</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" style="color: black;">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- in this section i have used a bootstrap carousel which is enabling the slide show which can be controlled by clicking on the three dots in the bottom or by clicking the arrow keys on keyboard. all the carousel items are linked to already existing wesites like amazon, myntra , zara, H&M etc and the use of anchor tag has been done.
+i have used the class container in order to make the images fit in a single which is technically known as inline and discard the default block layout. -->
+	<div class="header">
+	<div class="company-name">
+<h1 class="heading">Simona</h1>
+</div>
+<div class="by">by Ishan</div>
+<div id="sections" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#sections" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#sections" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#sections" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    	<div class="container">
+      <a href="https://www.amazon.in/Mens-Clothing/b?ie=UTF8&node=1968024031"><img src="https://media.istockphoto.com/photos/confident-manager-suitable-in-current-circumstances-masculinity-picture-id1282101313?b=1&k=20&m=1282101313&s=170667a&w=0&h=23bIqSQn-Vk6f9ciOTHkx1jo8DGf9bqxke17HWj4eA0="  class="d-block w-100" alt="...">
+      <div class="top-right">Men's<br>Collection.</div>
+    </a>
+  	</div>
+   </div>
+    <div class="carousel-item">
+    	<div class="container">
+      <a href="https://www.amazon.in/Womens-clothing/b?ie=UTF8&node=1953602031"><img src="https://images.pexels.com/photos/291762/pexels-photo-291762.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="d-block w-100" alt="...">
+      <div class="top-right">Women's<br>Collection.</div>
+    </a>
+  </div>
+    </div>
+    <div class="carousel-item">
+    	<div class="container">
+      <a href="https://www.firstcry.com/"> <img src="https://images.unsplash.com/photo-1617464629340-d727a73d4f69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGtpZHMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" class="d-block w-100" alt="...">
+      <div class="top-right">Kids<br>Collection.</div>
+    </a>
+  </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+<!-- i have linked all the photos to their respective brand websites. -->
+<hr class="line">
+<div class="companies">
+	<h3 style="font-weight: bolder; margin-bottom: 40px;">Shop from your favourite brands</h3>
+	<div class="company-images">
+		<a href="https://www.nike.com/in/"><img src="https://i.pinimg.com/474x/8b/56/dd/8b56dd6da9bde7867dae972d307af20d.jpg" class="brand-images"></a>
+    <a href="https://in.puma.com/"><img src="https://i.pinimg.com/474x/8a/e3/54/8ae354678ae4737003925ef3f7a98ac1.jpg" class="brand-images"><br></a>
+    <a href="https://www.hm.com/entrance.ahtml?orguri=%2F"><img src="https://i.pinimg.com/474x/87/ec/1b/87ec1b5894bf0f5529e3eb682f1fedb1.jpg" class="brand-images"></a>
+    <a href="https://www.zara.com/in/"><img src="https://i.pinimg.com/474x/77/8c/45/778c45c9aea20f0f2c1ce408e8fdfefa.jpg" class="brand-images"> <br></a>
+    <a href="https://www.gucci.com/us/en/"><img src="https://i.pinimg.com/474x/4b/48/be/4b48be0e4543f00d0090085b146cd429.jpg" class="brand-images"></a>
+    <a href="https://www.armani.com/en-us/experience/giorgio-armani"><img src="https://i.pinimg.com/474x/e2/e4/8f/e2e48f88b34106a17701c6d36f5fffa5.jpg" class="brand-images"></a>
+	</div>
+  <hr class="line" style="margin-bottom: 100px;">
+</div>
+<div id="sections" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#sections" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#sections" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#sections" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+      <a href="https://www.amazon.in/b?ie=UTF8&node=20810407031"><img src="https://images.pexels.com/photos/413707/pexels-photo-413707.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="width: 50%; height: 700px;" class="d-block w-100" alt="...">
+      <div class="top-right">Spring<br>Collection.</div>
+    </a>
+    </div>
+   </div>
+    <div class="carousel-item">
+      <div class="container">
+      <a href="https://www.amazon.in/womens-winter-wear/b?ie=UTF8&node=8988875031"><img src="https://media.istockphoto.com/photos/beautiful-woman-winter-portrait-picture-id872105470?k=20&m=872105470&s=612x612&w=0&h=biUxQ1peZswp_wr2IKfpYnI-fv6J8AOLK318DntEp5I=" alt="..." style="width: 50%; height: 700px;" class="d-block w-100" alt="...">
+      <div class="top-right">Winter<br>Collection.</div>
+    </a>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <div class="container">
+      <a href="https://www.amazon.in/summer-collection-for-women/s?k=summer+collection+for+women"><img src="https://media.istockphoto.com/photos/handsome-man-wearing-white-clothes-posing-in-sea-scenery-picture-id537548268?k=20&m=537548268&s=612x612&w=0&h=J9IFLCDl9NcLaOv3uh5E0nw0VnTmg_yj43gssm0kT3Q=" class="d-block w-100" alt="..." style="width: 50%; height: 700px;">
+      <div class="top-right" class="d-block w-100" alt="...">Summer<br>Collection.</div>
+    </a>
+  </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+<hr class="line">
+<div class="valentine">
+  <h3><p style="font-size: 50px;">VALENTINE WEEK</p></h3>
+  <div class="valentine-images">
+    <!-- i have used the border-radius attribute to convert a rectangular photo into oval shape.   -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzH4OxCE5-qXY7VQvBjTaJDCloPo_8E9n4hlc5Fd9dZ5CTQaReyxLbLNTipDv4gxcJ3y4&usqp=CAU" style="border-radius: 100%;">
+  </div>
+  <h2>LOVE</h2>
+  <div class="row">
+   <a href="https://www.myntra.com/valentines-men"> <div class="col"><img src="https://i.pinimg.com/474x/91/9f/02/919f02c1c90376adab6b63c9a890061a.jpg" style="height: 500px; margin-bottom: 30px;">
+   </a>
+    <h2>FOR HIM</h2>
+  
+  </div>
+  <div class="col"><a href="https://www.myntra.com/valentine"><img src="https://i.pinimg.com/474x/98/57/7c/98577cc481beddc5303d0397cf2b7688.jpg" style="height: 500px; margin-bottom: 30px;">
+  </a>
+    <h2>FOR HER</h2>
+  </div>
+  </div>
+    <!-- i have linked my own intagram and linked account to the respective text. -->
+<div class="footer">
+	<div class="newsletter">Join our Newsletter.</div>
+	<div class="links">
+		<a style="color: black; margin-left: 30px; margin-right: 30px;" class="fotter-links" href="https://www.instagram.com/ishanporwal12/">Instagram</a>
+		<a style="color: black; margin-left: 30px; margin-right: 30px;" class="fotter-links" href="">Twitter</a>
+		<a style="color: black; margin-left: 30px; margin-right: 30px;" class="fotter-links" href="https://www.linkedin.com/in/skj9436/recent-activity/">LinkedIn</a>
+	</div>
+		<div class="manufacturer">
+			<h4 style="font-weight: bolder; font-size: 10px;">Name And Address of the Manufacturer</h4>
+			<p>Ishan Porwal<br>
+			Jai Rice Industries, Etawah<br>
+			Uttar Pradesh,India</p> 
+		</div>
+	</div>
+</div>
+</body>
+</html>
